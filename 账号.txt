@@ -1,0 +1,156 @@
+AES加解密：
+WIFI账号密码：
+SSID: CTXA-5G
+pwd: U2FsdGVkX18GcR2AFR/SL2ammR85PkGtkuz4uYMhBow=   
+研发云密码：xiaDJ0902
+人力账号：
+w9417521@hq
+
+测试环境核心侧：10.127.192.5  dev01/d5qAPDG^F6rA*C9p
+
+堡垒机账号：W15399258305
+XiaDJ@6666
+4A登录失败解决
+星海AI中台kubored
+http://10.142.150.103:30180/nacos/#/login
+admin/8pW%YcWsCjtTwn3$、uv8RF9Pee6$*#
+
+运维平台密码：
+4P^D~^gKv^R
+
+103CK：
+password: Sve@%*zAPD3Qd^F6rA*9Az  username: default  8123
+
+kubord密码：8pW%YcWsCjtTwn3$
+165测试环境103机器拉流密码：
+dev01 d5qAPDG^F6rA*C9p
+
+postman:
+账号：XiaDJ
+pwd:XiaDJ@8888
+城市中台：机器登录信息  op  登录密码：bDHL$wDkbE5!x74WCZ
+xshell:
+输入框中执行命令：
+ssh test01@10.142.150.78
+ssh test01@10.142.150.73   拉流
+ssh test01@10.142.150.75   拉流
+密码：d5qAPDG^F6rA*C9p
+星海核心侧密码：
+XH@0701cty
+
+电信云平台地址：admin/8B4#plc@ 
+云南密码：b1dDRnw*f+A%Xyd
+山东机器密码：Qz1g_sd@2024
+
+西藏：
+root/airoot123!@#
+remoot/Telecom_AI@2021
+山西测试环境连接4A：
+基础设施SX-351-SLZX-103-9046
+remoot/Telecom_AI@2021
+root/Admin@coc1
+上海：
+资产：SHXXY-Z05-H109-SEV-SA5280-2U10
+root/t=Y6mTu#=qK@HWz^
+李佳4A：15891342460/XA@0621dxai
+
+nacos/qIm67x80w6b9k4I5*k9lw  /Ffcs@2022
+
+贵州：GZ-存储服务器-7           root/Admin@123
+贵州CK地址： http://10.254.93.166:9072/aiscript/index.html#/login ZGDX@2023aipass
+
+重庆：CQ-E605-J0112-SSEV-R5300 G4X-3-2U03  remoot/Telecom_AI@2021   /  ssh remoot@172.19.66.85  Telecom_AI@2021
+
+clickhouse client --host 172.19.66.85 --port 9000 -u default --password "ty7Pcm+S"
+
+clickhouse client --host 10.127.192.179 --port 9000 -u default --password "Sve@%*zAPD3Qd^F6rA*9Az"
+
+算法纳管mysql密码：xian-core-algorithm-test@2024
+
+算法纳管184密码：Tongyi012!@#!
+
+
+业务日志查询traceID时的地址：根据不同的模块进入不同的文件查询日志
+ssh 10.142.155.230:22
+用户名:test01
+/data/nfs-data/aipass/logs/application
+cd aifn-application-prod-8f569478d-xdpbx
+如果在网关的话就cd gateway
+ls gateway
+grep "0f0460e4114447f28d0714ec63f11434" aifn-gateway-prod-c46c7fcdc-f9wzc/sys-info.log
+kubectl get ns 获取命名空间（使用 get 命令可以获取当前集群中可用的资源列表）
+kubectl get pod -n center-aipaas-cloud-test   （kubectl get pod -n 【namespace名称】 #查看namespace下有那些pod）最后这个没找到gateway的文件
+kubectl get pod -n node-aipaas-cloud-shandong-test
+cd aifn-gateway-prod-76464b9bb6-8lbkl
+ll
+
+研发云上传大包命令：
+curl -uxiadongjie:AKCpBseXEVaEsxhHpgxKmMnQvtEfLaREhwQsd8BuFvYR76Bt9pZQSGvKVppJsBwsWfAE7qdUL -T PostalVehiclePPL_A10_v1.2.3_v1.0.1_0531.zip "https://gz02-artifact.srdcloud.cn/artifactory/core_wlgd-release-generic-local/aicore-v1.0.0/cloud/a10-zte/video/PostalVehiclePPL_A10_v1.2.3_v1.0.1_0531.zip"
+
+数据库地址：
+数据库mysql -u root -p 
+10.143.167.41：3306
+core/Ydw2#@qAneQG^F6rA*C4z
+clickhouse:
+10.143.167.41:9000 8123
+default/Dve@%*z2W5AQd^F6rA*9tZ
+断流数据：
+10.143.167.33 ：3306
+root/Qw#@qAPDG^F6rA*C4z
+
+四川环境grafana账号密码
+admin/8pW%YcWsCjtTwn3$
+
+山西环境数据库地址：
+http://10.254.12.122:9079/aiscript/#/script-manage
+admin/ZGDX@2023aipass
+
+AI赋能平台省侧：http://10.142.149.28:9081/aipassweb-test/#/login
+账号：appord01   
+pwd:Zhcg@2021
+AI赋能平台核心侧地址：
+http://10.142.149.28:9081/aipassweb-hx-test/#/app-managment 
+账号：xiadj
+pwd:  Zhcg@2021
+
+postman返回任务状态梳理：
+https://doc.weixin.qq.com/sheet/e3_AYQAAgbLAAkWFLncWMUSzCKafXlox?scode=ACoAuwc-AF8Tw215rQAQUALwbpAMo&tab=BB08J2
+
+研发云：
+https://www.srdcloud.cn/apict/12799/studio#/home/api-studio/inside/VNmtFaY0786c7e668ed3775c12bc271782c7cbe7ec4bf67/api/4960/detail/28597?spaceKey=12798
+接口设计流程文档：
+https://doc.weixin.qq.com/doc/w3_ARUA5waEAPANXE0VcNIQ7qgoSj1nP?scode=ACoAuwc-AF8TQ2dM9uARUA5waEAPA
+
+星河cloud openapi接口测试文档：
+https://doc.weixin.qq.com/sheet/e3_AV0AMwYkACAcuoer7KySXiBv0EE4P?scode=ACoAuwc-AF8MncSPxFARUA5waEAPA&tab=bbl2e7
+
+新拉流地址：
+ssh test01@10.142.149.239
+Tongyi012!@#!
+/data1/iotserver/ffmpeg-6.0-amd64-static
+修改路数 直接通过命令传入
+
+租户APPID带TEST的账号测试
+
+接口测试用带aipass的路径测试 可调用eop
+
+凯哥 测试内蒙古1.6星河联调  帮忙开通下 web资产和基础设施资产
+web资产：
+10.218.25.129:9096 
+基础设施资产：
+资产名称：LGSL-local1
+主机名：pass01
+IP:172.31.115.2
+
+与开发贾唐浩确认，1.6.5订单页面无新增入口
+
+测试环境（ctyunos）、开发环境、北京环境
+
+
+password: Sve@%*zAPD3Qd^F6rA*9Az  username: default  8123
+
+clickhouse: 192.168.19.30    192.168.19.13   
+clickhouse client --host 192.168.19.30 --port 9000 -u default -d aipass --password "ty7Pcm+S" 
+ck: clickhouse client --host 172.28.10.6 --port 9000 -u default -d aipass --password "ty7Pcm+S"
+clickhouse client --host 192.168.19.30 --port 9000 -u default -d aipass --password "ty7Pcm+S" --multiquery < aipass_clickhouse.sql
+
