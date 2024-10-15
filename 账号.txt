@@ -5,7 +5,7 @@ pwd: U2FsdGVkX18GcR2AFR/SL2ammR85PkGtkuz4uYMhBow=
 研发云密码：xiaDJ0902
 人力账号：
 w9417521@hq
-
+184机器密码：4Wud5W8gp%XvQ7^p
 测试环境核心侧：10.127.192.5  dev01/d5qAPDG^F6rA*C9p
 
 堡垒机账号：W15399258305
