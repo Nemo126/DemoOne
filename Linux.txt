@@ -26,17 +26,26 @@ linux压缩文件
 zip -r 压缩文件名.zip 目录路径
 将视频传到ceph机器上:
 scp *.mp4 192.168.51.19:/root/testvideo/
+kafka日志查看方法：
+kafka-console-producer.sh --bootstrap-server 10.127.188.6:9092 --topic  topic名称 --from-beginning | grep 关键字
+kafka-console-consumer.sh --bootstrap-server 10.127.188.6:9092 --topic  topic名称 --from-beginning | grep 关键字
+哪套kafka可以在nacos中的kafka.yaml文件看
 Git:
 git init
-
 git add .  添加
 git rm   删除文件
 git status 查看状态
 git commit -m 
+git remote add origin 
 
 提交文件至远程仓库：
 git commit -m "cc"
-git push origin main
+git push -u origin main
+
+再次提交新文件：
+在命令窗口中输入：git add .
+在命令窗口中输入：git commit -m “提交项目”
+在命令窗口中输入：git push origin master
 
 ceph相关命令：
 1.配置Access Key ID 和 Secret Access Key
@@ -79,6 +88,30 @@ s3cmd getlifecycle s3://xxxx
 
 视频传到ceph
 for i in `ls`;do s3cmd put $i s3://test-bucket/$i;done 
+
+vim s3policy.json
+#给所有用户put/get/delete/list 权限,可以根据需要调整权限
+{
+     "Version": "2012-10-17",
+     "Statement": [
+         {
+             "Effect": "Allow",
+             "Principal":"*",
+             "Action":[
+                                "s3:PutObject",
+                           "s3:GetObject",
+                       "s3:DeleteObject",
+                       "s3:ListBucket"
+                    ],
+             "Resource": "*"
+         }
+     ]
+ }
+
+赋权: 
+s3cmd setpolicy s3policy.json s3://bucket1  --acl-public
+
+s3cmd setacl --acl-public s3://bucket1/
 
 tar包压缩：tar -czvf archive_name.tar.gz directory_to_compress/
 查看日志：
@@ -293,3 +326,15 @@ docker：
 docker images;列出所有镜像
 docker search --limit 5 redis; 搜索镜像
 docker pull 某个xxx镜像名字[:TAG]  拉取镜像,没有TAG就会拉取最新版
+例子：
+从研发云拉取镜像：
+docker pull artifact.srdcloud.cn/aitestproject-ceshijishu-release-docker-local/镜像名：TAG
+在后台创建并运行容器：
+docker run -d artifact.srdcloud.cn/aitestproject-ceshijishu-release-docker-local/镜像名：TAG
+查看容器运行日志
+docker logs 容器id
+
+查看容器运行的进程
+docker top 容器id 
+查看是存活 正常运行
+docker ps
