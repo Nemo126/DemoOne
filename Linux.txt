@@ -13,6 +13,8 @@
 12、查看视频的md5值  md5sum /data/test_algorithm/iotserver/testvideo/lianrenjifei_2k.mp4
 13、统计日志中关键字个数 grep -o "关键字" 日志文件 | wc -l
 14、linux 字符串替换   :%s/old/new/g        查找/  n下一个 N上一个  
+解压gz文件
+gunzip -k filename.gz
 df -h
 tcpdump
 which mongod
