@@ -15,6 +15,8 @@
 14、linux 字符串替换   :%s/old/new/g        查找/  n下一个 N上一个  
 解压gz文件
 gunzip -k filename.gz
+解压tgz文件
+tar -zxvf file.tgz
 df -h
 tcpdump
 which mongod
