@@ -317,6 +317,7 @@ kubectl edit deployment aifn-system-prod -n node-aipaas-prod: 编辑Kubernetes�
 4、查看某个资源的详细信息：kubectl describe  pod pod_name -n namespace
     kubectl describe  deployment  deployment_name -n namespace （kubectl get deployment）
 5、修改yaml需要执行：kubectl apply去创建pod
+6、kubectl get svc -n node-eop-prod -o wide  kubectl get node -o wide
 6、修改服务配置需
       6.1  在挂载目录修改配置
       6.2 重启pod
