@@ -343,3 +343,9 @@ docker logs 容器id
 docker top 容器id 
 查看是存活 正常运行
 docker ps
+linux 配置jmeter环境：
+export JMETER_HOME=/path/to/jmeter(jmeter安装目录)
+export PATH=$JMETER_HOME/bin:$PATH
+source /etc/profile
+再去jmeter路径下给jmeter授权chmod +x jmeter
+jmeter -v
