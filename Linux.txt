@@ -23,7 +23,14 @@ which mongod
 cd /opt/TDP/mongodb
 mongo
 mongo 'mongodb://admin:W2!eq2aaS#2024!#@10.127.192.103:5331,10.127.192.124:5331,10.127.192.15:5331/admin?replicaSet=rs1'
-
+# 查找mongo的命令（如果找不到，进入mongo安装目录进行确认）
+which mongo
+# 进入mongodb的安装目录，这个目录在所有环境中是固定的，可执行文件的目录对应bin目录
+cd /opt/TDP/mongodb/
+# 方式1: 执行链接mongo
+./mongo 'mongodb://<username>:<passowrd>@<hostip>:<port>/admin'
+# 方式2: 执行链接mongo
+./mongo --host <hostip> --port <port> -u root -p
 进程相关命令：
 查询进程；netstat -atu|grep 5544     lsof -i:5544
 linux压缩文件
