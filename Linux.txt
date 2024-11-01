@@ -343,6 +343,12 @@ docker logs 容器id
 docker top 容器id 
 查看是存活 正常运行
 docker ps
+#卸载原版本docker
+sudo rpm -qa | grep docker
+sudo yum remove docker docker-client docker-common
+ 
+#安装新版本
+sudo yum install docker-ce # 社区版本
 linux 配置jmeter环境：
 export JMETER_HOME=/path/to/jmeter(jmeter安装目录)
 export PATH=$JMETER_HOME/bin:$PATH
