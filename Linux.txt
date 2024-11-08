@@ -13,6 +13,9 @@
 12、查看视频的md5值  md5sum /data/test_algorithm/iotserver/testvideo/lianrenjifei_2k.mp4
 13、统计日志中关键字个数 grep -o "关键字" 日志文件 | wc -l
 14、linux 字符串替换   :%s/old/new/g        查找/  n下一个 N上一个  
+1‌5、wget命令中‌-o和-O的区别
+‌-o‌：用于指定输出日志文件的名称。当使用wget下载文件时，可以使用-o选项来指定一个日志文件的名称，wget会将下载过程中的详细信息输出到指定的日志文件中。例如，wget -o mylog.txt http://example.com/file.zip会将下载过程中的信息记录到mylog.txt文件中。
+‌-O‌：用于指定输出文件的名称。使用-O选项可以指定下载文件的保存名称，而不是使用服务器上文件的原始名称。例如，wget -O myfile.zip http://example.com/file.jpg会将下载的文件保存为myfile.zip，即使原始文件名是file.jpg。
 解压gz文件
 gunzip -k filename.gz
 解压tgz文件
