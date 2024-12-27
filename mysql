@@ -1,0 +1,4 @@
+备份表：
+create table sys_menu_1204 select * from sys_menu;
+清空表数据：
+TRUNCATE TABLE 表名;
