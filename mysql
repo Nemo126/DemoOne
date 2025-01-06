@@ -2,3 +2,13 @@
 create table sys_menu_1204 select * from sys_menu;
 清空表数据：
 TRUNCATE TABLE 表名;
+正则表达式查询：查找名字中包含 "Jo" 后跟任意字符（包括零个字符）和 "n" 的所有记录
+SELECT * FROM employees WHERE name REGEXP 'Jo.*n';
+
+模糊查询：
+%：表示任意数量的字符（包括零个字符）。
+_：表示单个字符。
+SELECT * FROM employees WHERE name LIKE '%John%';
+SELECT * FROM employees WHERE name LIKE '_o%';
+
+
